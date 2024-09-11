@@ -13,8 +13,9 @@ Project Goals:
 
    a. C-style array (fixed-size)
 
-   - Implement a wrapper struct with size information
-   - Access elements by index
+   - `get_item(index)`, `set_item(index, value)`
+   - `insert_item(index, value)`, `remove_item(index)`
+   - `free()`, `clear()`
 
    b. Dynamic array (like std::vector)
 
