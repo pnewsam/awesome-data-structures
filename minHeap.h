@@ -1,11 +1,19 @@
 #ifndef MIN_HEAP_H
 #define MIN_HEAP_H
 
-bool insert(int element);
+int parent(int index);
 
-bool extractMin();
+int leftChild(int index);
 
-bool heapify();
+int rightChild(int index);
+
+bool insert(int *heap, int element);
+
+bool remove(int *heap);
+
+bool extractMin(int *heap);
+
+bool heapify(int *elements);
 
 bool buildHeap(int *elements);
 
