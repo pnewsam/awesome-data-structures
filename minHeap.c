@@ -17,33 +17,61 @@ typedef struct {
   int size;
 } Heap;
 
-int parent(int index) {
+int parentIdx(int index) {
   return (index - 1) / 2;
 }
 
-int leftChild(int index) {
+int parentEl(Heap *heap, int index) {
+  return heap->elements[parentIdx(index)];
+}
+
+int leftIdx(int index) {
   return (2 * index) + 1;
 }
 
-int rightChild(int index) {
+int leftEl(Heap *heap, int index) {
+  return heap->elements[leftIdx(index)];
+}
+
+int rightIdx(int index) {
   return (2 * index) + 2;
 }
 
-bool insert(Heap *heap, int value) {
+int rightEl(Heap *heap, int index) {
+  return heap->elements[rightIdx(index)];
+}
+
+bool insert(Heap *heap, int index, int element) {
+  int smallest = element;
+  int left = leftEl(heap, index);
+  int right = rightEl(heap, index);
+
+  if (index < heap->size && left < element) {
+    // Left is new minimum in subtree
+    heap->elements[index] = left;
+
+
+    return insert(heap, leftIdx(index), left);
+  } else if (index < heap->size && right < element) {
+    // Right is new minimum in subtree
+    smallest = right;
+  } else {
+    // Current is already minimum
+    return true;
+  }
+
+}
+
+bool extractMin(Heap *heap, int *element) {
+  *element = heap->elements[0];
+
+  int lastElement = heap->elements[heap->size - 1];
+
   return true;
 }
 
-bool extractMin(Heap *heap, int *value) {
-  *value = heap->elements[0];
+bool bubbleUp(Heap *heap) {
 
-  int lastValue = heap->elements[heap->size - 1];
-
-
-  return true;
-}
-
-bool bubbleDown(int *elements) {
-  
 }
 
 bool heapify(Heap *heap) {
