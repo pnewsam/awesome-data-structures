@@ -3,9 +3,6 @@
 // - getItem and setItem should only permit operations on indices that are already within the bounds of the current array size
 // - insertItem and deleteItem are shifty -- insert will shift right and delete will shift left to acommodate changes
 
-#ifndef ARRAY_H
-#define ARRAY_H
-
 #include <stddef.h>
 #include <stdbool.h>
 #include "utils.h"
@@ -100,5 +97,3 @@ void freeArray(Array *array) {
   free(array->items);
   free(array);
 }
-
-#endif

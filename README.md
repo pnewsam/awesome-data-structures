@@ -72,6 +72,8 @@ Project Goals:
 4. Binary Search Tree (BST)
    Description: Tree data structure with ordered nodes for efficient searching.
 
+   Implementation:
+
    - `insert(element)`, `delete(element)`
    - `search(element)`
    - `min()`, `max()`
@@ -81,6 +83,11 @@ Project Goals:
 
    - Recursive and iterative implementations
    - Balancing considerations (optional: implement basic balancing)
+
+   Relevant terms
+
+   - "Complete tree"
+   - "Balanced tree"
 
 5. Hash Table
    Description: Data structure that implements an associative array abstract data type.
@@ -97,19 +104,9 @@ Project Goals:
    - Collision resolution strategies
    - Dynamic resizing
 
-6. Heap
-   Description: Specialized tree-based data structure satisfying the heap property.
+6. Heaps
 
-   - `insert(element)`
-   - `extract_min()` (for min-heap) or `extract_max()` (for max-heap)
-   - `heapify()`
-   - `build_heap(array)`
-
-   Implementation focus:
-
-   - Implement both min-heap and max-heap
-   - Array-based implementation
-   - Use heap to implement a priority queue
+   [Heap](./P1N6_Heap.md)
 
 7. Graphs (Basic)
    Description: Collection of nodes potentially connected by edges.
