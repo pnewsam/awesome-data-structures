@@ -68,7 +68,7 @@ bool insertItem(Array *array, int index, int value) {
   }
 }
 
-bool deleteItem(Array *array, int index) {
+bool removeItem(Array *array, int index) {
   if (array == NULL || index >= array->size) {
     printf("Failed to delete item.\n");
     return false;
