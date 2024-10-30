@@ -1,128 +1,59 @@
-# Shakespeare Bot
+# Awesome Data Structures
 
-Project Goals:
+## Part 1: Essential Data Structures
 
-1. Parse the file and organize it for better use. Create a file for each play. (And one for the sonnets). Then create a text file containing a map of each filename.
+### 1. Arrays and Dynamic Arrays
 
-## Data Structures
+Description: Contiguous memory blocks storing elements of the same type.
 
-### Part 1: Essential Data Structures
+### 2. Linked Lists
 
-1. Arrays and Dynamic Arrays
-   Description: Contiguous memory blocks storing elements of the same type.
+Description: Sequence of nodes where each node points to the next node.
 
-   a. C-style array (fixed-size)
+### 3. Stack and Queue
 
-   - `get_item(index)`, `set_item(index, value)`
-   - `insert_item(index, value)`, `remove_item(index)`
-   - `free()`, `clear()`
+Description: Abstract data types with specific insertion and deletion rules.
 
-   b. Dynamic array (like std::vector)
+### 4. Binary Search Tree (BST)
 
-   - `push_back(element)`, `pop_back()`
-   - `at(index)`, `operator[]`
-   - `size()`, `capacity()`, `empty()`
-   - `reserve(new_capacity)`, `resize(new_size)`
+Description: Tree data structure with ordered nodes for efficient searching.
 
-   Implementation focus:
+### 5. Hash Table
 
-   - Memory allocation and management
-   - Resizing strategy for dynamic arrays
+Description: Data structure that implements an associative array abstract data type.
 
-2. Linked Lists
-   Description: Sequence of nodes where each node points to the next node.
+- `insert(key, value)`, `delete(key)`
+- `search(key)`
+- `hash_function(key)`
+- `handle_collision()` (implement both chaining and open addressing)
+- `resize()` and `rehash()`
 
-   a. Singly linked list
+Implementation focus:
 
-   - `push_front(element)`, `pop_front()`
-   - `insert_after(position, element)`
-   - `erase_after(position)`
-   - `front()`, `empty()`, `clear() `
+- Efficient hash function design
+- Collision resolution strategies
+- Dynamic resizing
 
-   b. Doubly linked list
+### 6. Heaps
 
-   - `push_back(element)`, `push_front(element)`
-   - `pop_back()`, `pop_front()`
-   - `insert(position, element)`, `erase(position)`
-   - `size()`, `empty()`, `clear()`
+[Heap](./markdown/Heap.md)
 
-   Implementation focus:
+### 7. Graphs (Basic)
 
-   - Node structure and memory management
-   - Handling edge cases (empty list, single element)
+Description: Collection of nodes potentially connected by edges.
 
-3. Stack and Queue
-   Description: Abstract data types with specific insertion and deletion rules.
+- `add_vertex()`, `add_edge()`
+- `remove_vertex()`, `remove_edge()`
+- `is_adjacent(vertex1, vertex2)`
+- `get_neighbors(vertex)`
+- `BFS(start_vertex)`, `DFS(start_vertex)`
 
-   a. Stack (LIFO - Last In First Out)
+Implementation focus:
 
-   - `push(element)`, `pop()`
-   - `top()`, `empty()`, `size()`
+- Implement both adjacency list and adjacency matrix representations
+- Traversal algorithms (BFS and DFS)
 
-   b. Queue (FIFO - First In First Out)
-
-   - `enqueue(element)`, `dequeue()`
-   - `front()`, `back()`, `empty()`, `size()`
-
-   Implementation focus:
-
-   - Implement using both array and linked list
-   - Handling underflow and overflow conditions
-
-4. Binary Search Tree (BST)
-   Description: Tree data structure with ordered nodes for efficient searching.
-
-   Implementation:
-
-   - `insert(element)`, `delete(element)`
-   - `search(element)`
-   - `min()`, `max()`
-   - traversals: `in_order()`, `pre_order()`, `post_order()`
-
-   Implementation focus:
-
-   - Recursive and iterative implementations
-   - Balancing considerations (optional: implement basic balancing)
-
-   Relevant terms
-
-   - "Complete tree"
-   - "Balanced tree"
-
-5. Hash Table
-   Description: Data structure that implements an associative array abstract data type.
-
-   - `insert(key, value)`, `delete(key)`
-   - `search(key)`
-   - `hash_function(key)`
-   - `handle_collision()` (implement both chaining and open addressing)
-   - `resize()` and `rehash()`
-
-   Implementation focus:
-
-   - Efficient hash function design
-   - Collision resolution strategies
-   - Dynamic resizing
-
-6. Heaps
-
-   [Heap](./markdown/Heap.md)
-
-7. Graphs (Basic)
-   Description: Collection of nodes potentially connected by edges.
-
-   - `add_vertex()`, `add_edge()`
-   - `remove_vertex()`, `remove_edge()`
-   - `is_adjacent(vertex1, vertex2)`
-   - `get_neighbors(vertex)`
-   - `BFS(start_vertex)`, `DFS(start_vertex)`
-
-   Implementation focus:
-
-   - Implement both adjacency list and adjacency matrix representations
-   - Traversal algorithms (BFS and DFS)
-
-### Part 2: Advanced Data Structures
+## Part 2: Advanced Data Structures
 
 1. Balanced Trees
 
