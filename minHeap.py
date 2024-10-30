@@ -11,7 +11,7 @@ class MinHeap:
 
     def heapify(self, elements, size, index):
         # If left child is less than, swap them and heapify left child
-        if self.leftChild(index) < elements[]
+        # if self.leftChild(index) < elements[]
 
 
         # If right child is less than, swap them and heapify right child
