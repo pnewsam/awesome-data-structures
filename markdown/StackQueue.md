@@ -1,5 +1,7 @@
 # Stack and Queue
 
+Description: Abstract data types with specific insertion and deletion rules.
+
 a. Stack (LIFO - Last In First Out)
 
 - `push(element)`, `pop()`

@@ -1,5 +1,7 @@
 # Hash Table
 
+Description: Data structure that implements an associative array abstract data type.
+
 - `insert(key, value)`, `delete(key)`
 - `search(key)`
 - `hash_function(key)`

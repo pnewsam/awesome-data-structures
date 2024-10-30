@@ -1,5 +1,7 @@
 # Linked List
 
+Description: Sequence of nodes where each node points to the next node.
+
 a. Singly linked list
 
 - `push_front(element)`, `pop_front()`

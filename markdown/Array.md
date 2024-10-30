@@ -1,5 +1,7 @@
 # Array
 
+Description: Contiguous memory blocks storing elements of the same type.
+
 a. C-style array (fixed-size)
 
 - `get_item(index)`, `set_item(index, value)`

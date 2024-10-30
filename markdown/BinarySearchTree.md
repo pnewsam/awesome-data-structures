@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+Description: Tree data structure with ordered nodes for efficient searching.
+
 Implementation:
 
 - `insert(element)`, `delete(element)`

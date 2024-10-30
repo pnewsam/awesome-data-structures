@@ -4,35 +4,23 @@
 
 ### 1. Arrays and Dynamic Arrays
 
-Description: Contiguous memory blocks storing elements of the same type.
+[View more](./markdown/Array.md)
 
 ### 2. Linked Lists
 
-Description: Sequence of nodes where each node points to the next node.
+[View more](./markdown/LinkedList.md)
 
 ### 3. Stack and Queue
 
-Description: Abstract data types with specific insertion and deletion rules.
+[View more](./markdown/StackQueue.md)
 
 ### 4. Binary Search Tree (BST)
 
-Description: Tree data structure with ordered nodes for efficient searching.
+[View more](./markdown/BinarySearchTree.md)
 
 ### 5. Hash Table
 
-Description: Data structure that implements an associative array abstract data type.
-
-- `insert(key, value)`, `delete(key)`
-- `search(key)`
-- `hash_function(key)`
-- `handle_collision()` (implement both chaining and open addressing)
-- `resize()` and `rehash()`
-
-Implementation focus:
-
-- Efficient hash function design
-- Collision resolution strategies
-- Dynamic resizing
+[View more](./markdown/HashTable.md)
 
 ### 6. Heaps
 
@@ -40,142 +28,34 @@ Implementation focus:
 
 ### 7. Graphs (Basic)
 
-Description: Collection of nodes potentially connected by edges.
-
-- `add_vertex()`, `add_edge()`
-- `remove_vertex()`, `remove_edge()`
-- `is_adjacent(vertex1, vertex2)`
-- `get_neighbors(vertex)`
-- `BFS(start_vertex)`, `DFS(start_vertex)`
-
-Implementation focus:
-
-- Implement both adjacency list and adjacency matrix representations
-- Traversal algorithms (BFS and DFS)
+[View more](./markdown/Graph.md)
 
 ## Part 2: Advanced Data Structures
 
-1. Balanced Trees
+### 1. Balanced Trees
 
-   a. AVL Tree
-   Description: Self-balancing binary search tree where the height of the two child subtrees of any node differ by at most one.
+[View more](./markdown/BalancedTree.md)
 
-   - `insert(element)`, `delete(element)`, `search(element)`
-   - `left_rotate(node)`, `right_rotate(node)`
-   - `update_height(node)`, `get_balance_factor(node)`
-   - `rebalance(node)`
+### 2. Advanced Tree Structures
 
-   Implementation focus:
+[View more](./markdown/AdvancedTreeStructures.md)
 
-   - Maintaining balance after insertions and deletions
-   - Implementing rotation operations efficiently
+### 3. Disjoint Set (Union-Find)
 
-   b. Red-Black Tree
-   Description: Self-balancing binary search tree with good worst-case guarantees for insertion, deletion, and search.
+[View more](./markdown/DisjointSet.md)
 
-   - `insert(element)`, `delete(element)`, `search(element)`
-   - `left_rotate(node)`, `right_rotate(node)`
-   - `color_flip(node)`
-   - `fix_violation_after_insert(node)`, `fix_violation_after_delete(node)`
+### 4. Advanced Graph Algorithms
 
-   Implementation focus:
+[View more](./markdown/AdvancedGraphAlgorithms.md)
 
-   - Implementing color properties and violations
-   - Balancing the tree while maintaining red-black properties
+### 5. B-Tree and B+ Tree
 
-2. Advanced Tree Structures
+[View more](./markdown/BTree.md)
 
-   a. Trie (Prefix tree)
-   Description: Tree-like data structure for efficient retrieval of keys in a dataset of strings.
+### 6. Bloom Filter
 
-   - `insert(word)`, `search(word)`, `delete(word)`
-   - `starts_with(prefix)`
-   - `get_all_words_with_prefix(prefix)`
+[View more](./markdown/BloomFilter.md)
 
-   Implementation focus:
+### 7. Skip List
 
-   - Efficient string operations and prefix matching
-   - Memory-efficient node structure
-
-   b. Segment Tree
-   Description: Tree-like data structure for storing intervals or segments, allowing for efficient query operations.
-
-   - `build(array)`
-   - `query(start, end)`
-   - `update(index, value)`
-   - `range_update(start, end, value)` (optional: lazy propagation)
-
-   Implementation focus:
-
-   - Efficient range queries and updates
-   - Implementing recursive and iterative versions
-
-3. Disjoint Set (Union-Find)
-   Description: Data structure that keeps track of a set of elements partitioned into disjoint subsets.
-
-   - `make_set(element)`
-   - `find(element)`
-   - `union(element1, element2)`
-   - `get_num_sets()`
-
-   Implementation focus:
-
-   - Path compression optimization
-   - Union by rank or size
-
-4. Advanced Graph Algorithms
-   Description: More complex graph operations and algorithms.
-
-   - `minimum_spanning_tree(graph)` (Kruskal's or Prim's algorithm)
-   - `shortest_path(graph, start, end)` (Dijkstra's algorithm)
-   - `all_pairs_shortest_path(graph)` (Floyd-Warshall algorithm)
-   - `topological_sort(graph)`
-   - `is_bipartite(graph)`
-
-   Implementation focus:
-
-   - Efficient implementation of classic graph algorithms
-   - Handling different graph representations (adjacency list/matrix)
-
-5. B-Tree and B+ Tree
-   Description: Self-balancing tree data structures designed for efficient disk access and range queries.
-
-   Implementation requirements for B-Tree:
-
-   - `insert(key, value)`, `delete(key)`, `search(key)`
-   - `split_child(node, index)`, `merge_children(node, index)`
-
-   Additional for B+ Tree:
-
-   - `range_query(start_key, end_key)`
-   - `get_next_leaf()`, `get_prev_leaf()`
-
-   Implementation focus:
-
-   - Maintaining tree properties during insertions and deletions
-   - Efficient range queries (for B+ Tree)
-
-6. Bloom Filter
-   Description: Space-efficient probabilistic data structure for membership testing.
-
-   - `add(element)`
-   - `might_contain(element)`
-   - `get_false_positive_probability()`
-   - `create_hash_functions(num_functions)`
-
-   Implementation focus:
-
-   - Implementing multiple hash functions
-   - Optimizing for space efficiency and false positive rate
-
-7. Skip List
-   Description: Probabilistic data structure that allows for fast search within an ordered sequence of elements.
-
-   - `insert(element)`, `delete(element)`, `search(element)`
-   - `generate_level()`
-   - `create_node(element, level)`
-
-   Implementation focus:
-
-   - Implementing probabilistic level generation
-   - Efficient search and update operations
+[View more](./markdown/SkipList.md)
