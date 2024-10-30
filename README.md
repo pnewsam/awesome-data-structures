@@ -106,7 +106,7 @@ Project Goals:
 
 6. Heaps
 
-   [Heap](./P1N6_Heap.md)
+   [Heap](./markdown/Heap.md)
 
 7. Graphs (Basic)
    Description: Collection of nodes potentially connected by edges.

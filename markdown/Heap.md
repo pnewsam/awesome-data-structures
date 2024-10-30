@@ -6,11 +6,11 @@ Specialized tree-based data structure satisfying the heap property: that the roo
 
 A typical binary heap is a tree stored as a contiguous array. The tree is always complete, because it is filled from left to right -- meaning that the array is always contiguous.
 
-![Heap Tree](P1N6_HeapTree.svg)
+![Heap Tree](images/HeapTree.svg)
 
 Remember that the elements are **not guaranteed to be ordered** -- and it is different therefore from a **sorted array**. The only guarantee is that the root node is the minimum (min heap) or maximum (max heap) value.
 
-![Heap Tree](P1N6_HeapTreeVariant.svg)
+![Heap Tree](images/HeapTreeVariant.svg)
 
 Heaps are optimized for <mark>fast operations against the root node</mark>: insertions (of new minimum), deletions (of minimum), and reads (of minimum). But these
 
